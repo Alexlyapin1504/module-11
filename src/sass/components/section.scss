@@ -1,0 +1,31 @@
+.section__title {
+    text-align: center;
+    font-family: $title-font-family;
+    font-size: $f24;
+    color: $title-font-color;
+    min-height: 116px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap column;
+            flex-flow: wrap column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 auto;
+
+    &--content {
+        font-family: $main-font-family;
+        font-size: $f30;
+        text-transform: uppercase;
+
+        &::after {
+            @include pseudo;
+            border-bottom: 0.3rem solid  $section-title-color;
+            width: 6rem;
+            margin: 4rem auto 0 auto;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.input {
+    display: inline-block; 
+
+    &__email {
+        font-family: $figcaption-font-family;
+        font-size: $f15;
+        line-height: 2.4rem;
+        color: $input-color;
+        height: 4rem;
+        width: 22.9rem;
+        padding-left: 1.2rem;
+        border: 0.1rem solid $input-border-color;
+        border-right: none;
+    }
+
+    &__submit {
+        font-family: $secondary-font-family;
+        font-size: $f14;
+        color: $header-font-color;
+        text-transform: uppercase;
+        background-color: $input-submit-color;
+        width: 15rem;
+        height: 4rem;
+        border: none;
+    }
+}

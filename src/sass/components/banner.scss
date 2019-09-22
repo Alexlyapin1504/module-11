@@ -1,0 +1,30 @@
+.banner {
+    color: $header-font-color;
+    width: 82rem;
+    margin: 0 auto;
+
+    &__title {
+        font-family: $title-font-family;
+        font-size: $f72;
+        margin-bottom: 4rem;
+    }
+
+    &__content {
+        font-family: $secondary-font-family;
+        font-size: $f150;
+        line-height: 14rem;
+        text-transform: uppercase;
+        margin-bottom: 12rem;
+    }
+
+    &__link {
+        font-family: $secondary-font-family;
+        font-size: $f14;
+        line-height: 3.4rem;
+        width: 16.2rem;
+        text-transform: uppercase;
+        text-align: center;
+        border: 0.3rem solid $header-font-color;
+        margin: 0 auto;
+    }
+}

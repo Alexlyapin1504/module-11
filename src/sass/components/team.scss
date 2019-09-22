@@ -1,0 +1,111 @@
+.team {
+    padding-bottom: 8rem;
+
+    &__title {
+        margin-bottom: 4.2rem;
+    }
+
+    &__text {
+        font-family: $team-font-family;
+        color: $text-font-color;
+        font-size: $f15;
+        line-height: 2.4rem;
+        text-align: center;
+        display: block;
+        width: 94.6rem;
+        margin: 0 auto 8.6rem; 
+    }
+    
+    &__list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+    
+    &__figure {
+        position: relative;
+        width: 38rem;
+        height: 54.4rem;
+    }
+    
+    &__overlay {
+        position: absolute;
+        width: 100%;
+        height: 47rem;
+        visibility: hidden;
+        z-index: 1;
+        background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, .9)), to(rgba(243, 129, 129, .9)));
+        background-image: -webkit-linear-gradient(bottom, rgba(252, 227, 138, .9), rgba(243, 129, 129, .9));
+        background-image: -o-linear-gradient(bottom, rgba(252, 227, 138, .9), rgba(243, 129, 129, .9));
+        background-image: $linear-gradient;
+        -webkit-box-shadow: 10px 10px rgba($color: $input-submit-color, $alpha: 1);
+                box-shadow: 10px 10px rgba($color: $input-submit-color, $alpha: 1);
+        -webkit-transition: -webkit-transform 200ms linear;
+        transition: -webkit-transform 200ms linear;
+        -o-transition: transform 200ms linear;
+        transition: transform 200ms linear;
+        transition: transform 200ms linear, -webkit-transform 200ms linear;
+    }
+
+    &__item:hover {
+        .team__overlay {
+            -webkit-transform: translate(-10px, -10px);
+                -ms-transform: translate(-10px, -10px);
+                    transform: translate(-10px, -10px);
+            visibility: visible;
+        }
+
+        .team__img {
+            -webkit-transform: translate(-10px, -10px);
+                -ms-transform: translate(-10px, -10px);
+                    transform: translate(-10px, -10px);
+        }
+    }
+
+    &__img {
+        display: block;
+        -webkit-transition: -webkit-transform 200ms linear;
+        transition: -webkit-transform 200ms linear;
+        -o-transition: transform 200ms linear;
+        transition: transform 200ms linear;
+        transition: transform 200ms linear, -webkit-transform 200ms linear;
+    }
+    
+    &__figcaption {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient:vertical;
+        -webkit-box-direction:normal;
+            -ms-flex-flow:column wrap;
+                flex-flow:column wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        height: 7.4rem;
+        padding-top: 2.8rem;
+
+        &--name {
+            font-family: $main-font-family;
+            text-transform: uppercase;
+            font-size: $f14;
+        }
+        
+        &--position { 
+            font-family: $figcaption-font-family;
+            font-size: $f15;
+            line-height: 2.4rem;
+            color: $text-font-color;
+            display: block;
+        }
+    }
+}
+

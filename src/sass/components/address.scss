@@ -1,0 +1,18 @@
+.address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+
+  &__pre {
+    font-family: $main-font-family;
+    font-size: $f14;
+    width: 100%;
+  }
+
+  &__link {
+    display: inline-block;
+    color: $address-link-color;
+  }
+}

@@ -1,0 +1,10 @@
+@mixin pseudo($display: block, $content: ''){
+    content: $content;
+    display: $display;
+}
+
+@mixin position($height, $width, $pos) {
+    height: $height;
+    width: $width;
+    background-position: $pos;
+}
